@@ -1,4 +1,4 @@
-# SSETechAssessment
+# SETechAssessment
 
 Cloud Native infrastructure encompasses many, many things these days. We do not expect anyone to be an expert in everything--that is impossible! Rather, we look for key traits:
 
