@@ -17,6 +17,7 @@ Cloud Native infrastructure encompasses many, many things these days. We do not 
 To get a handle on who you are, what your drive is, and how we can best support your success we have a few asks.  **Disclaimer**, we live in the age of Google, and that's OK! It's totally fine to look things up as you go. Get as far as you can, and be honest with yourself about your time. We're happy to give you more if you need it, just communicate with us when you're ready! At a high level, we'd like you to attempt the following:
 
 1. Create Kubernetes cluster - Do this however you want (EKS, GKE, AKS, IKS, OKE, KOPS, OCP, Rancher, whatever!)
+    - (Note: A node with 4cpu and 8 gigs of ram should be fine to run the Sysdig on)
     - If you're building in the cloud, and you're new to the cloud, learn about security and billing alerts!
     - Turn off or scale down your cluster when you're not using it, but don't destroy it!
 3. Signup for a Sysdig Platform Trial (https://sysdig.com/company/free-trial-platform/)
