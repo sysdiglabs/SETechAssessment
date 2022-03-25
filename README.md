@@ -25,7 +25,7 @@ To get a handle on who you are, what your drive is, and how we can best support 
 5. Install the classic *voting app* into your K8s cluster (https://github.com/dockersamples/example-voting-app)
 6. Get Creative and build some stuff in Sysdig.
     - Scan the images being loaded, what do the results mean?
-    - Benchmarks? What's up with those?
+    - Posture? What's up with those?
     - Enable Runtime Policies, generate some noise (how might you do that?)
     - Activity audit! Why's that valuable?
     - Build a PromQL query using the query builder in the explore section of Sysdig Monitor using metrics from the Voting App (bonus points if you use StatsD metrics in a PromQL query)
