@@ -25,13 +25,13 @@ To get a handle on who you are, what your drive is, and how we can best support 
 5. Install the classic *voting app* into your K8s cluster (https://github.com/dockersamples/example-voting-app)
     - Clone the repo to your github
 6. Get Creative and build some stuff in Sysdig.
-  In Secure:
+A. In Secure:
     - Scan the images being loaded, what do the results mean?
     - Integrate IaC with the voting app in your github repo.
     - Compliance? What's up with those? Scan your app with a benchmark. Submit a PR to the voting app repo.
     - Enable Runtime Policies, generate some noise (how might you do that?)
     - Activity audit! Why's that valuable?
-  B. In Monitor:
+B. In Monitor:
     - Advisor, anything showing up that looks interesting?
     - Build a PromQL query using the query builder in the explore section of Sysdig Monitor using metrics from the Voting App (bonus points if you use StatsD metrics in a PromQL query)
     - Build a dashboard with your query + static metrics from Sysdig that relate multiple things together
