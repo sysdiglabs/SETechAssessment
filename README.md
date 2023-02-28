@@ -34,7 +34,7 @@ To get a handle on who you are, what your drive is, and how we can best support 
     B. In Monitor if you'd like:
     - Advisor, anything showing up that looks interesting?
     - Build a PromQL query using the query builder in the explore section of Sysdig Monitor using metrics from the Voting App (bonus points if you use StatsD metrics in a PromQL query)
-    - Build a dashboard with your query + static metrics from Sysdig that relate multipule things together
+    - Build a dashboard with your query + static metrics from Sysdig that relate multiple things together
     - Add views to the dashboard that might be interesting to a user
 7. Don't destroy your cluster! We'd like to look at it with you.
     - Hit some buttons and nav around things
