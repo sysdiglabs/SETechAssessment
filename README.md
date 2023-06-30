@@ -19,20 +19,22 @@ To get a handle on who you are, what your drive is, and how we can best support 
 1. Create Kubernetes cluster - Do this however you want (EKS, GKE, AKS, IKS, OKE, KOPS, OCP, Rancher, whatever! Lots of free 'credit' options out there.)
     - (Note: A node with 4cpu and 8 gigs of ram should be fine to run the Sysdig agent on)
     - If you're building in the cloud, and you're new to the cloud, learn about security and billing alerts!
-    - Turn off or scale down your cluster when you're not using it, but don't destroy it!
-3. Signup for a Sysdig Platform Trial (https://sysdig.com/company/free-trial-platform/)
-4. Install the Sysdig Agent(s) to your Kubernetes cluster using the *Getting Started* landing page
+    - Turn off or scale down your cluster when you're not using it, but **don't destroy it!**
+3. Signup for a Sysdig **Platform** Trial (https://sysdig.com/company/free-trial-platform/)
+4. Install the Sysdig Agent(s) to your Kubernetes cluster. Use the onboarding Wizard to help.
 5. Install the classic *voting app* into your K8s cluster (https://github.com/dockersamples/example-voting-app)
     - Clone the repo to your github
+    - Expose the app so you can browse to the UI and see it working
 6. Get Creative and build some stuff in Sysdig.
     - In Secure:
-        - Scan the images being loaded, what do the results mean?
+        - Scan the images being used for the Voting App, what do the results mean? Which one has the most Risk? Why?
+        - Bonus points if you setup a Github action to scan an image with our cli scanner
         - Integrate IaC with the voting app in your github repo.
-        - Compliance? What's up with those? Scan your app with a benchmark. Submit a PR to the voting app repo.
-        - Enable Runtime Policies, generate some noise (how might you do that?)
+        - Compliance? Setup a Zone for your App & repo. Configure a benchmark to run. Submit a PR to the voting app repo from Sysdig compliance 
+        - Enable Runtime Policies, generate some events. Be creative with the events you create and then. showus how you did it and why you think the activity maybe suspicious?
         - Activity audit! Why's that valuable?
     - In Monitor:
-        - Advisor, anything showing up that looks interesting?
+        - Advisor, what is the usage of your cluster vs the requiests and limits? What other interesting information can you find?
         - Build a PromQL query using the query builder in the explore section of Sysdig Monitor using metrics from the Voting App (bonus points if you use StatsD metrics in a PromQL query)
         - Build a dashboard with your query + static metrics from Sysdig that relate multiple things together
         - Add views to the dashboard that might be interesting to a user
