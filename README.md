@@ -20,7 +20,7 @@ To get a handle on who you are, what your drive is, and how we can best support 
     - (Note: A node with 4cpu and 8 gigs of ram should be fine to run the Sysdig agent on)
     - If you're building in the cloud, and you're new to the cloud, learn about security and billing alerts!
     - Turn off or scale down your cluster when you're not using it, but **don't destroy it!**
-3. Signup for a Sysdig **Platform** Trial (https://sysdig.com/company/free-trial-platform/)
+3. Signup for a Sysdig Trial, make sure you **Select All** features when signing up (https://sysdig.com/start-free/)
 4. Install the Sysdig Agent(s) to your Kubernetes cluster. Use the onboarding Wizard to help.
 5. Install the classic *voting app* into your K8s cluster (https://github.com/dockersamples/example-voting-app)
     - Clone the repo to your github
